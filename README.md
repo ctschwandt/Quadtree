@@ -1,4 +1,4 @@
-# Quadtree Collision Simulator (SDL2)
+# Quadtree Collision Simulator
 
 A real-time particle simulation that compares **Brute Force** vs **Quadtree** collision detection.
 
