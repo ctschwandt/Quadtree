@@ -18,16 +18,14 @@ Each frame updates the system by:
 ### Collision Modes
 
 - **Brute Force**:  
-  Performs ~$\tfrac{n(n-1)}{2}$ pairwise checks per frame.  
+  Performs exactly n(n−1)/2 pairwise checks per frame.  
   Becomes very costly with 1,000+ particles.
 
 - **Quadtree**:  
   Partitions space into localized regions, reducing collision checks to **nearby neighbors only**.  
-  At large $n$, this yields a **dramatic FPS boost** compared to brute force.
+  At large n, this yields a **dramatic FPS boost** compared to brute force.
 
 ### Demo
 📺 [Watch the demo on YouTube](https://www.youtube.com/watch?v=O1PLDiVBXmA)
-
----
 
 ---
