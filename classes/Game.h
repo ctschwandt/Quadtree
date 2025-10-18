@@ -36,15 +36,14 @@ enum GameState
 };
 
 inline
-void handle_collisions(int i, int j, std::vector< Circle * > circles, std::vector< bool > & collided, Surface & surface)
+void handle_collisions(int i, int j, std::vector< Circle * > & circles, std::vector< bool > & collided, Surface & surface)
 {
     Circle * circle0 = circles[i];
     Circle * circle1 = circles[j];
     if (i != j && circle0->collides_with(*circle1))
     {
-        // collided[i] = true; // I don't need collided?
+        // collided[i] = true;
         // collided[j] = true;
-        // char bleh;
         // std::cout << "COLLISION: "
         //           << *circle0 << std::endl
         //           << *circle1 << std::endl;
